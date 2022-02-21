@@ -1,10 +1,17 @@
+:root{
+    --cor01: #FF9E01;
+    --cor02: #E8770C;
+    --cor03: #FF5F0D;
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 header{
-    background-image: linear-gradient(to bottom, #FF9218 , #FF8700 , #F58100);
+    background-image: linear-gradient(to bottom, var(--cor01) , var(--cor02) , var(--cor03));
     text-align: center;
     padding-top: 40px;
     margin: auto;
