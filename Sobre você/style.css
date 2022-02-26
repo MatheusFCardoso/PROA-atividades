@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    margin: 15px auto 15px auto;
+    width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section > h1{
+    font-size: 2.0em;
+    text-align: center;
+}
+
+section > p{
+    padding: 10px 0px 10px 0 ;
+}
+
+section > .pergunta{
+    font-weight: bold;
+}
+
+.galeria{
+    text-align: center;
+}
+
+.next{
+    text-align: center;
+}
+
+.next > a{
+    color: white;
+    background-color: aqua;
+    padding: 5px;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 14px;
+}
+
+.next > a:hover{
+    color: black;
+    border: 2px solid aqua ;
+    background-color: white;
+}
+
+.receitas{
+    width: 700px;
+    margin: 15px auto 15px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.receitas > ul{
+    padding: 15px 0px 15px 15px;
+    list-style-type: none;
+
+}
+
+.receitas > ul > li{
+    color: black;
+    padding: 1px 0 1px 0 ;
+}
+
+.receitas > ul > li > a{
+    color: black
+}
+
+.receitas > ul > li > a:hover{
+    color: aqua
+}    
+
+img{
+    width: 600px;
+    padding: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+
+}
