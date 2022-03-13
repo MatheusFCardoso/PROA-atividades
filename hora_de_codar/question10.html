@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+    <form>
+        <h1>Calcular a Área de um Círculo </h1>
+        <p>Valor do raio: <input type="number" name="" id="num1"></p>
+        <input type="button" value="Calcular" onclick="calcular()">
+
+        <div id="res">
+            <p>
+
+            </p>
+        </div>
+    </form>
+    <script>
+        
+        function calcular(){
+            var num1 = window.document.querySelector('input#num1')  
+            var n1 = Number(num1.value)
+            var res = window.document.querySelector('div#res')
+            var area = n1*3.14
+            res.innerHTML = `O seu círculo tem área de ${area}`
+        }
+    </script>
+</body>
+</html>

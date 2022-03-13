@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    <form>
+        <h1>Calcular a Área do Trapézio</h1>
+        <p>Base maior: <input type="number" name="" id="num1"></p>
+        <p>Base menor: <input type="number" name="" id="num2"></p>
+        <p>Altura do trapézio: <input type="number" name="" id="num3"></p>
+        <input type="button" value="Calcular" onclick="calcular()">
+
+        <div id="res">
+            <p>
+
+            </p>
+        </div>
+    </form>
+    <script>
+        
+        function calcular(){
+            var num1 = window.document.querySelector('input#num1')  
+            var num2 = window.document.querySelector('input#num2')
+            var num3 = window.document.querySelector('input#num3')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var n3 = Number(num3.value)
+            var res = window.document.querySelector('div#res')
+            var area = ((n1 + n2)*n3)/2 
+            res.innerHTML = `O seu trapézio tem área de ${area}`
+        }
+    </script>
+</body>
+</html>

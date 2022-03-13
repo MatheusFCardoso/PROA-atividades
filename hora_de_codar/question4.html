@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+    <form>
+        <h1>Calcular a Área do Retangulo</h1>
+        <p>Base do retangulo: <input type="number" name="" id="num1"></p>
+        <p>Altura do retangulo: <input type="number" name="" id="num2"></p>
+        <input type="button" value="Calcular" onclick="calcular()">
+
+        <div id="res">
+            <p>
+
+            </p>
+        </div>
+    </form>
+    <script>
+        
+        function calcular(){
+            var num1 = window.document.querySelector('input#num1')  
+            var num2 = window.document.querySelector('input#num2')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var res = window.document.querySelector('div#res')
+            var area = n1 * n2
+            res.innerHTML = `O seu retangulo tem base ${n1} e altura ${n2} a área dele é ${area} `
+        }
+    </script>
+</body>
+</html>
