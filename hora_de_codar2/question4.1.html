@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+</head>
+<body>
+
+    <script>
+        var n1 = parseInt(window.prompt('Digite um número'))
+        var n2 = parseInt(window.prompt('Digite um número'))
+        var n3 = parseInt(window.prompt('Digite um número'))
+        soma = 0
+
+        if ( n1 == n2 || n2 == n3 || n3 == n1){
+            window.alert(`A números iguais`)
+        }else if(n1 < n2  && n1 < n3){
+            soma = n2 + n3
+            window.alert(`A soma dos maiores números é ${n2} + ${n3} é ${soma}`)
+        }else if(n2 < n1 && n2 < n3 ){
+            soma = n3 + n1
+            window.alert(`A soma dos maiores números é ${n1} + ${n3} é ${soma}`)
+        }else{
+            soma = n1 + n2
+            window.alert(`A soma dos maiores números é ${n1} + ${n2} é ${soma}`)
+        }
+          
+    </script>
+    
+</body>
+</html>

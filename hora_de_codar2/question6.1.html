@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    <script>
+        var soma = 0
+        var array = []
+        for(c=0; c<10; c++){
+            var n = parseInt(window.prompt('Digite um número'))
+            array.push(n) 
+        }
+        for(var c =0; c<array.length; c++) {
+            soma += array[c]
+        }
+
+
+        window.alert(`A soma desses valores é ${soma}, A média deles é ${soma/10}`)
+</script>
+</body>
+</html>

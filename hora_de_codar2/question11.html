@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+<body>
+    <p>Valor da Kilometragem inicial no dia : <input type="number" id="n1"></p>
+    <p>Valor da Kilometragem final do dia : <input type="number" id="n2"></p>
+    <p>Valor do litro gasto: <input type="number" id="n3"></p>
+    <p>Valor ganho no dia : <input type="number" id="n4"></p>
+    <p><input type="button" value="Calcular" onclick="calcular()"></p>
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var n1 = window.document.querySelector('input#n1')
+            var n2 = window.document.querySelector('input#n2')
+            var n3 = window.document.querySelector('input#n3')
+            var n4 = window.document.querySelector('input#n4')
+            var res = window.document.querySelector('div#res')
+            n1 = Number(n1.value)
+            n2 = Number(n2.value)
+            n3 = Number(n3.value)
+            n4 = Number(n4.value)
+            
+            /*calculo*/
+            var km = n2 - n1
+            var kml = km/n3
+            var pGas = n3*2.90
+            var vLiq = n4 - pGas  
+
+            res.innerHTML = `Você rodou ${km} Km hoje, fez ${kml} Km/l, você gastou hoje R$ ${pGas} com gasolina, seu lucro líquido do dia é ${vLiq}`
+
+        }
+    </script>
+</body>
+</html>

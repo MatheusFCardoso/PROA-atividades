@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+    <script>
+        var array = []
+        var soma = 0
+        for(var c = 0; c <4; c++ ){
+            var n1 = parseInt(window.prompt('Digite um número'))
+            if( n1 >=0 && n1 <= 10 ){
+                array.push(n1)
+            }else{
+                window.alert('[ERRO] Número maior que 10 ou menor que 0 ')
+            }
+        }
+        for(var c = 0; c <array.length;c++){
+            soma +=array[c]
+        }
+        
+        var media = soma/4
+        if(media > 5){
+            window.alert(`A média sua foi ${media} Você passou no teste `)   
+        }else{
+            window.alert(`A média sua foi ${media} Você passou não passou no teste `)
+        }
+        
+    </script>
+</body>
+</html>

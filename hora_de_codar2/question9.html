@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+<body>
+    <script>
+        var array = []
+         var soma = 0
+        for(var c=0 ; c<6; c++){
+            var n1 = parseInt(window.prompt('Digite um número'))
+            if(n1 < 72){
+                array.push(n1)
+            }
+        }
+        for(var c =0; c<array.length; c++) {
+            soma += array[c]
+        }
+
+        window.alert(`A soma desses valores dispresando os números maiores que 72 é igual a ${soma}`)
+        
+    </script>
+</body>
+</html>
