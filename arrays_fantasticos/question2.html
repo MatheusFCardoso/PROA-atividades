@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <script>
+        window.alert('Me informe 12 números')
+        var array = []
+        var array50 = []
+
+        for(var c = 1 ; c <= 12; c++){
+            var n1 = parseInt(window.prompt(`Digite o ${c}° número`))
+            if(n1 < 50){
+                array.push(n1)
+            }else{
+                array50.push(n1)
+            }
+        }
+
+        window.alert(`Números menores que 50 ${array}`)
+        window.alert(`Números maiores que 50 ${array50}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var drofo = [
+            'anel da invisibilidade',
+            'par de botas mágicas',
+            'par de botas mágicas',
+            'poção do sono',
+            'poção da inocência',
+            'poção da inocência'
+        ]
+
+
+        var torper = [
+            'capa da invisibilidade',
+            'pedra do despertar',
+            'varinha das varinha',
+            'poção da inocência',
+            'poção da mentira',
+            'poção da mentira',
+            'poção anti-inteligência'
+        ]
+
+        torper.splice(4,1) // consumiu uma das poções da mentira
+        torper.splice(1,1) // perdeu sua pedra
+        torper.push('par de botas mágicas') // ganhou uma par de bota mágicas
+        drofo.splice(1,1) // drofo deu um par de botas mágico
+        torper.push('escudo mágico','espada mágica') // achou um escudo mágico e uma espada mágica
+        
+        drofo.push('par de botas mágicas') // ganhou mais um par de bota mágica
+        drofo.splice(2,1) // usou sua poção de sono
+        torper.splice(4,1) // drofo consumiu a poção de anti inteligencia do torper
+        drofo.push('ovo de dragão','coxinha') // achou um ovo de dragão e uma coxinha
+
+        document.write(`<h1>Inventário do Drofo</h1> ${drofo}`)
+        document.write(`<h1>Inventário do Torper</h1> ${torper}`)
+        
+    </script>
+</body>
+</html>

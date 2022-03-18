@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var romances = ["Memorial de Aires (1908)", "Ressureição (1872)", "Casa Velha (1885)",
+            "Memorias Póstumas de Brás Cubas (1881)",
+            "Helena (1876)", "Quincas Borba (1891)", "Esaú e Jacó (1904)", "A mão e a luva (1874)",
+            "Dom Casmurro (1899)", "Iaiá Garcia (1878)"
+        ];
+
+        var coletanea_de_poesias = ["Americanas (1875)", "Ocidentais (1880)", "Falenas (1870)", "Crisálidas (1864)",
+            "Poesias Completas (1901)"
+        ];
+
+        var coletanea_de_contos = ["Várias Histórias (1896)", "Histórias sem Data (1884)", "Papéis Avulsos (1882)",
+            "Contos Fluminenses (1870)",
+            "Histórias da Meia-Noite (1873)", "Relíquias de Casa Velha (1906)", "Páginas Recolhidas (1899)"
+        ]
+
+        var primeiros = []
+        var nn = 0
+
+        for (var c = 0; c < 3; c++) {
+            nn = romances[c]
+            primeiros.push(nn);
+        }
+        for (var c = 0; c < 3; c++) {
+            nn = coletanea_de_contos[c]
+            primeiros.push(nn);
+        }
+        for (var c = 0; c < 3; c++) {
+            nn = coletanea_de_poesias[c]
+            primeiros.push(nn);
+        }
+
+        document.write(`<h1>Obras de Machado de Assis</h1> ${primeiros}`)
+
+        /* "Memorial de Aires (1908", "Ressureição (1872)", "Casa Velha (1885)"
+           "Americanas (1875)", "Ocidentais (1880)", "Falenas (1870)"
+           "Várias Histórias (1896)","Histórias sem Data (1884)",  "Papéis Avulsos (1882)" */
+    </script>
+</body>
+
+</html>
