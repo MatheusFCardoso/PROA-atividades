@@ -9,18 +9,21 @@
 <body>
     <script>
         var array = []
-         var soma = 0
-        for(var c=0 ; c<6; c++){
+        var soma = 0
+        
+        for(var c =0; c<6; c++ ){
             var n1 = parseInt(window.prompt('Digite um número'))
-            if(n1 < 72){
+            if(n1<72){
                 array.push(n1)
             }
         }
-        for(var c =0; c<array.length; c++) {
+
+        for(var c=0; c<array.length;c++){
             soma += array[c]
         }
 
-        window.alert(`A soma desses valores dispresando os números maiores que 72 é igual a ${soma} todos o valores informados são ${array}`)
+        window.alert(` você informou ${array.length}, a soma desses valores é ${soma}`)
+
         
     </script>
 </body>

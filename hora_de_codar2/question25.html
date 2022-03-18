@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var op = parseInt(window.prompt('Escolha uma operação e digite o número dela 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação'))
+
+        if(op > 4 || op <= 0){
+            window.alert('OPERAÇÃO NÃO IDENTICADA... recarregue a página')
+         }else{
+            var n1 = parseInt(window.prompt('Digite o númro pra ser calculado'))
+            var n2 = parseInt(window.prompt('Digite outro númro pra ser calculado'))
+         }
+
+         var res = 0
+
+         switch(op){
+            case 1:
+            res = n1 + n2
+            window.alert(`O Resultado da sua adição é ${res}`)
+            break
+            case 2:
+            res = n1 - n2
+            window.alert(`O Resultado da sua subtração é ${res}`)
+            break
+            case 3:
+            res = n1/n2
+            window.alert(`O Resultado da sua divisão é ${res}`) 
+            break
+            case 4:
+            res = n1*n2
+            window.alert(`O Resultado da sua mutiplicação é ${res}`)
+            default:
+         }
+
+
+        
+
+
+    </script>
+</body>
+</html>

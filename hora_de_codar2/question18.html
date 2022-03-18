@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 18</title>
+</head>
+<body>
+    <script>
+        var sexo = window.prompt('Qual é o seu sexo ?')
+        var n1 = parseInt(window.prompt('Qual é a sua altura ?'))
+        var ideal = 0
+
+        sexo = sexo.toLocaleLowerCase()
+        if( sexo == 'masculino'){
+            ideal = (72.7*n1)-58
+            window.alert(`O seu peso ideal é ${ideal}`)
+        }else if(sexo == 'feminino'){
+            ideal = (62.1*n1)-44.7
+            window.alert(`O seu peso ideal é ${ideal}`)
+        }else{
+            window.alert(`[ERRO] sexo inválido, tente, masculiono ou feminino `)
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

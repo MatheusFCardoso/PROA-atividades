@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 22</title>
+</head>
+<body>
+    <script>
+        window.alert('Loja Remi du Fromage está com uma promoção onde cada capacete artesanal para tartaruga custa R$18.230 e pode ser pago em até 15 vezes sem juros.')
+
+        var parcela = parseInt(window.prompt('Em quantas vezes você desseja pagar'))
+
+        var preco = 18230.00/parcela
+        preco = preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        window.alert(`Você pagará ${preco} por cada parcela.`)
+    </script>
+</body>
+</html>

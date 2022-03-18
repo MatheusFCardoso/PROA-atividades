@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 21</title>
+</head>
+<body>
+    <script>
+        window.alert('Digite a nota do aluno, caso se o aluno optar por fazer a prova optativa considere 0')
+
+        var n1 = parseInt(window.prompt('Nota da primeira prova'))
+        var n1o = parseInt(window.prompt('Nota da primeira prova optativa'))
+
+        var n2 = parseInt(window.prompt('Nota da segunda prova'))
+        var n2o = parseInt(window.prompt('Nota da segunda prova optativa'))
+
+        var nota1 = 0
+        var media = 0
+
+        if(n1o> n1){
+            var nota1 = n1o
+        }else{
+            var nota1 = n1
+        }
+        if(n2o> n2){
+            var media = (n2o + nota1)/2
+        }else{
+            var media = (n2 + nota1)/2
+        }
+
+        if(media >= 6){
+            window.alert(`APROVADO, sua média foi ${media}`)
+        }else if(media < 3){
+            window.alert(`REPROVADO, sua média foi ${media}, estude mais. `)
+        }else{
+            window.alert(`EM EXAME, sua média foi ${media}`)
+        }
+
+
+
+
+    </script>
+</body>
+</html>

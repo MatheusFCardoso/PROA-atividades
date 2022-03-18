@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 15</title>
+</head>
+<body>
+    <script>
+        var anoUser = parseInt(window.prompt('Em que ano você nasceu ?'))
+        var ano = new Date()
+        var ano = ano.getFullYear()
+        var idade = ano - anoUser
+
+        if(idade < 16){
+            window.alert('Você é menor de idade ainda não vota')
+        }else if(idade >= 16  && idade < 18){
+            window.alert('Voto não obrigatório')
+        }else if(idade >= 18 && idade < 70 ){
+            window.alert('Voto obrigatório')
+        }else{
+            window.alert('Voto não obrigatório')
+        }
+
+        console.log(ano)
+        console.log(idade)
+    </script>
+</body>
+</html>

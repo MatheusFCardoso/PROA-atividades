@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+</head>
+<body>
+    <script>
+        var compra = parseInt(window.prompt('Quantas maçãs você levára? Lembrando as maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, se comprar acima de uma dúzia elas ficaram por R$ 0,25 cada.'))
+
+        var apple = 0
+        if(compra < 12){
+            apple = 0.30
+        }else{
+            apple = 0.25
+        }
+
+        var preco = apple*compra
+        var preco = preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        window.alert(`Voce irá comprar ${compra} maçãs. cada maçã saíra por ${apple} centavos valor total da compra é ${preco}`)
+    </script>
+    
+</body>
+</html>

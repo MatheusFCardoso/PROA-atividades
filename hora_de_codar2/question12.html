@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12</title>
+</head>
+<body>
+    <p>Comprimento da pista : <input type="number" id="n1"></p>
+    <p>Quantas voltas : <input type="number" id="n2"></p>
+    <p>Números de rebastecimentos: <input type="number" id="n3"></p>
+    <p>Consumo do carro Km/l : <input type="number" id="n4"></p>
+    <p><input type="button" value="Calcular" onclick="calcular()"></p>
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var n1 = window.document.querySelector('input#n1')
+            var n2 = window.document.querySelector('input#n2')
+            var n3 = window.document.querySelector('input#n3')
+            var n4 = window.document.querySelector('input#n4')
+            var res = window.document.querySelector('div#res')
+            n1 = Number(n1.value)
+            n2 = Number(n2.value)
+            n3 = Number(n3.value)
+            n4 = Number(n4.value)
+    
+            
+            /*calculo*/
+            var voltas = n1/n3
+            var distP = (voltas * n1)/1000
+            var consumo = n4 * distP
+
+           
+            res.innerHTML = `A distancia percorrida até a primeira parada é ${distP}. O numero de voltas até a primeira parada é ${voltas}. O carro vai gastar ${consumo} até a parada 1.`
+        
+
+        }
+    </script>
+</body>
+</html>
