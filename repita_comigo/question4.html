@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+    <script>
+        var soma = 0
+        var array = []
+        for(var c = 15; c <= 100; c++  ){
+            array.push(c)
+        }
+
+        for(var c = 0; c < array.length; c++){
+            soma += array[c]
+        }
+
+        document.write(`A soma dos valores entre 15 e 100 é ${soma} e a média é ${soma/(array.length-1)} `)
+    </script>
+</body>
+</html>

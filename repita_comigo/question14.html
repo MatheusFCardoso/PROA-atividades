@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+
+    <script>
+        var errado = 0
+        var certo = 0
+        for (var c = 1; c <=10; c++) {
+            n1 =parseFloat(prompt(`Informe o ${c}° valor.`))
+
+            if (n1 < 24 || n1 > 42){
+                errado++
+            } else{
+                certo++
+            }
+           
+
+        }
+        document.write(`A quantidade de números inseridos que estão dentro do intervalo de: 24 a 42, é de: ${certo}. <br> E os que estão de fora são: ${errado}.`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
