@@ -8,16 +8,22 @@
 </head>
 <body>
     <script>
-        var n1 = parseInt(window.prompt('Digite um até que tabuada você quer'))
-        for(var t = 1; t <=n1; t++ ){
+        var n1 = parseInt(window.prompt('Digite um número'))
 
-            document.write(`<h1>Tabuada do ${t}</h1>`)
+        var t = 1
+        
+        
+        while(t <= n1){
+            document.write('<h1> Tabuado do ' + t + '</h1>')
             
-            for(var c = 1; c <=10; c++ ){
-            document.write(`${t} x ${c} = ${c*t}<br>`)
+            var c = 1
 
+            while(c <= 10){
+                document.write(t + ' x ' + c + ' = ' + c*t +'<br>')
+                c++
             }
-            
+
+            t++
         }
     </script>
 </body>
