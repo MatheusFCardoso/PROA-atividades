@@ -170,7 +170,7 @@ function naoAutorizada(){
 function sair() {
     var confirma = confirm('Você deseja sair?');
     if (confirma) {
-        window.alert(`${nome}  ,foi um prazer ter você por aqui!`)
+        window.alert(`${nome}, foi um prazer ter você por aqui!`)
         window.close();
     } else {
         
